@@ -11,7 +11,7 @@ class Groovekit < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/scookdev/groovekit-cli/releases/download/v1.1.0/groovekit-cli_1.1.0_Darwin_x86_64.tar.gz"
-      sha256 "c29882e191c5af9716eb816ead7cbdde5433368eca7fb1a115125cd72c05fc91"
+      sha256 "e11242ae93b285d14b422f084244bf747b5ccb45bfddf86a15b1cacf7a330fe7"
 
       def install
         bin.install "groovekit"
@@ -19,7 +19,7 @@ class Groovekit < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/scookdev/groovekit-cli/releases/download/v1.1.0/groovekit-cli_1.1.0_Darwin_arm64.tar.gz"
-      sha256 "dcecd80249c949dd66edbcee1c5fe6e76c0f920c1d9a014476b35b565d34a4a0"
+      sha256 "28fc767aae014986470b7183fb4af490f959b715174e75960912d84ec547bd21"
 
       def install
         bin.install "groovekit"
@@ -30,14 +30,14 @@ class Groovekit < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/scookdev/groovekit-cli/releases/download/v1.1.0/groovekit-cli_1.1.0_Linux_x86_64.tar.gz"
-      sha256 "8fe3615523cd70358c55bfcb4132358dfdf1d4e0eed8eae636a7f8b3f578b8c5"
+      sha256 "58fa232a036ccfd624f3ec9e9681f98d3b37953d71287afd7ce90c8f723acd0c"
       def install
         bin.install "groovekit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/scookdev/groovekit-cli/releases/download/v1.1.0/groovekit-cli_1.1.0_Linux_arm64.tar.gz"
-      sha256 "f1d3caf832d50b8322b95d8c42ba1d7e2f9de2e419ac6165300f1f18bfe16ebc"
+      sha256 "f4ffae7e5769d603805922f7e7c85a77202dd3a259ed054b5905b17a43f1a37f"
       def install
         bin.install "groovekit"
       end
