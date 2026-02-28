@@ -5,23 +5,23 @@
 class Groovekit < Formula
   desc "CLI for GrooveKit - Monitor cron jobs and APIs"
   homepage "https://groovekit.io"
-  version "1.3.0"
+  version "1.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/scookdev/groovekit-cli/releases/download/v1.3.0/groovekit-cli_1.3.0_Darwin_x86_64.tar.gz"
-      sha256 "500c1881a5b6df9989c8d374e8401abef3fb8adbb6633e63d8800127b28ea0b5"
+      url "https://github.com/scookdev/groovekit-cli/releases/download/v1.3.1/groovekit-cli_1.3.1_Darwin_x86_64.tar.gz"
+      sha256 "5a4ac349cd2fe34fd14268d341930ebec9e70fa33dfdb51ba89459c28b78ad59"
 
-      def install
+      define_method(:install) do
         bin.install "groovekit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/scookdev/groovekit-cli/releases/download/v1.3.0/groovekit-cli_1.3.0_Darwin_arm64.tar.gz"
-      sha256 "248ab3739d9e95f3cc99de333ce3a4ef429e5e2d1892471cb8f563b88aadf3dc"
+      url "https://github.com/scookdev/groovekit-cli/releases/download/v1.3.1/groovekit-cli_1.3.1_Darwin_arm64.tar.gz"
+      sha256 "1c0bf22d08631dfd60aabdf69814b896f63d6a0b7593a184ffa5702b87288ce7"
 
-      def install
+      define_method(:install) do
         bin.install "groovekit"
       end
     end
@@ -29,16 +29,16 @@ class Groovekit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/scookdev/groovekit-cli/releases/download/v1.3.0/groovekit-cli_1.3.0_Linux_x86_64.tar.gz"
-      sha256 "637fde2612deab16af3c97e24696ad1dd3d3ffa0ce76185c670a5eccee6d3f6b"
-      def install
+      url "https://github.com/scookdev/groovekit-cli/releases/download/v1.3.1/groovekit-cli_1.3.1_Linux_x86_64.tar.gz"
+      sha256 "35884ef3998ece4ee168eb0adda9572c5aad759f6f576fbb400b925d4afb7a91"
+      define_method(:install) do
         bin.install "groovekit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/scookdev/groovekit-cli/releases/download/v1.3.0/groovekit-cli_1.3.0_Linux_arm64.tar.gz"
-      sha256 "74616aecb4cb1f8815b2ad70f4dda18a5888f8541bd266937504b2a3f93bd9a5"
-      def install
+      url "https://github.com/scookdev/groovekit-cli/releases/download/v1.3.1/groovekit-cli_1.3.1_Linux_arm64.tar.gz"
+      sha256 "4be76785f4aef550f7c9800bb3a11e9bfd1310417b826957701fd17f03424331"
+      define_method(:install) do
         bin.install "groovekit"
       end
     end
